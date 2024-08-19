@@ -1,0 +1,272 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Custom CSS to ensure the dropdown width matches the button */
+.dropdown-menu-custom {
+  width: 100%; /* Makes the dropdown take the full width of its parent */
+  min-width: 100px; /* Adjust based on your button's width */
+}
+
+/* Optional: If you need to adjust the dropdown width based on the button */
+#dropdownMenuButton1 {
+  display: inline-block;
+}
+
+.dropdown-menu-custom {
+  position: absolute;
+}
+
+.navbar-item {
+  display: inline-block; /* Ensures that the underline effect works */
+  padding: 5px; /* Optional: adds some spacing around the text */
+}
+
+.navbar-item:hover {
+  cursor: pointer;
+  font-weight: 700;
+  color: #85ef21;
+  text-decoration: underline; /* Adds the underline effect */
+}
+
+#signup{
+  cursor: pointer;
+}
+
+#title:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 3px #0bcc96; /* Remove the 4th parameter */
+}
+
+#image{
+  width: 300px !important;
+  height: 200px !important;
+}
+
+/* ---------------banner------------------ */
+
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: url("./images/GettyImages-1331029732-1.webp") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#hero .container {
+  /* padding-top: 80px; */
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+#get{
+  border: none;
+  border-radius: 25px;
+  width: 150px;
+  height: 40px;
+  background-color: #0bcc96;
+  color: #fff;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+#get:hover{
+  background-color: transparent;
+  border: 1px solid #0bcc96;
+  transition: 0.2s ease-in-out;
+}
+
+/* ------------------Footer---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.container {
+      max-width: 1200px;
+      margin: auto;
+}
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+ul {
+      list-style: none;
+}
+
+.footer {
+      background-color: #e8f2f4;
+      padding: 10px 0;
+}
+
+.title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.icon {
+      width: 70px;
+      height: 40px;
+      border-radius: 10px;
+      box-shadow: 1px 0px 2px 2px gainsboro;
+      /* margin-top: 35px;
+      margin-left: 130px; */
+
+      background-color: #0D6EFD;
+}
+
+.icon:hover {
+
+      box-shadow: 0px 1px 5px 5px white;
+      transition: ease-out 0.5s;
+}
+
+.name {
+      font-weight: 500;
+      color: #8CB7F5;
+      text-shadow: 0.7px 0.7px #0D6EFD;
+
+}
+
+/* .footer-col {
+      width: 25%;
+      padding: 0 15px;
+} */
+
+.footer-col h5 {
+      font-size: 18px;
+      text-transform: capitalize;
+      /* margin-bottom: 35px; */
+      font-weight: 500;
+      position: relative;
+      /* margin-left: 25px; */
+}
+
+.footer-col h5:hover {
+      transition: ease-out 0.3s;
+      padding-left: 15px;
+}
+
+.footer-col ul li:not(:last-child) {
+      margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: black;
+      text-decoration: none;
+      font-weight: 300;
+      color: black;
+      display: block;
+      transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+      color: #0D6EFD;
+      padding-left: 15px;
+      font-weight: 500;
+
+}
+
+.footer-col .social-links a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #0D6EFD;
+      transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+      color: white;
+      background-color: #0D6EFD;
+
+}
+
+.copyright {
+      text-align: center;
+      /* Adjust as needed */
+      color: #888;
+      /* Adjust color to match your design */
+      font-size: 14px;
+      /* Adjust font size as needed */
+}
+
+/*responsive*/
+@media(max-width: 1005px) {
+      .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+      }
+
+}
+
+@media(max-width: 767px) {
+      .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+      }
+}
+
+@media(max-width: 574px) {
+      .footer-col {
+            width: 100%;
+
+      }
+
+      .footer {
+            text-align: center;
+      }
+}
+
+.footer-end {
+      background-color: rgb(43, 38, 38);
+      height: 30px;
+}
+
+.footer-end p {
+      color: white;
+}
